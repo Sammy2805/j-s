@@ -692,6 +692,9 @@ justify-content: space-evenly;
     height: 235px;
   }
 }
+span  h4{
+  text-align: center;
+}
 .bookmarkBtn {
   width: 140px;
   height: 50px;
