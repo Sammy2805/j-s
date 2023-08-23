@@ -36,12 +36,13 @@ body {
     
     cursor: pointer;
     justify-content: center;
-    & h2 {
+}
+    #me  h2 {
       padding-left: 15px;
       font-weight: 100;
       font-size: 15px;
     }
-}
+
 .open .bar:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
@@ -71,7 +72,8 @@ body {
   top: 53%;
   width: 43%;
   left: 10%;
-  & h1 {
+}
+  .content  h1 {
     font-size: 70px;
     padding: 5px;
     color: #ffffff;
@@ -80,7 +82,7 @@ font-family: 'Tinos', serif;
     /* font-family: 'Arimo', sans-serif; */
     /* font-family: "Playfair Display", serif; */
   }
-  & p {
+  .content  p {
     font-size: 20px;
     color: #ffffff;
     padding-top: 20px;
@@ -89,12 +91,13 @@ font-family: 'Tinos', serif;
     font-weight: 400;
   
   }
-}
+
 .static {
   position: relative;
   /* overflow: hidden; */
   color: black;
-  & img {
+}
+  .static  img {
     width: 60%;
     /* border-radius: 0 15px 15px 0; */
     position: fixed;
@@ -106,7 +109,7 @@ font-family: 'Tinos', serif;
     /* background-size: cover; */
   
   }
-  & nav {
+  .static  nav {
     position: fixed;
     top: 30px;
     background: rgba(255, 255, 255, 0.5);
@@ -121,13 +124,14 @@ font-family: 'Tinos', serif;
     left: 3%;
     cursor: pointer;
     justify-content: center;
-    & h2 {
+  }
+  .static  h2 {
       padding-left: 15px;
       font-weight: 100;
       font-size: 15px;
     }
-  }
-}
+  
+
 
 .mobile {
   display: block;
@@ -262,9 +266,11 @@ font-family: 'Tinos', serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  & .date {
+}
+  .inner  .date {
     width: 100%;
-    & h2 {
+  }
+  .inner  h2 {
       font-size: 50px;
       width: 100%;
       display: flex;
@@ -274,14 +280,13 @@ font-family: 'Tinos', serif;
       flex-direction: column;
       padding-bottom: 30px;
     }
-    & nav {
+    .inner  nav {
       font-size: 50px;
       font-family: "Playfair Display", serif;
       height: 100%;
       text-align: center;
     }
-  }
-}
+ 
 .countdown-container {
   text-align: center;
 }
@@ -298,7 +303,8 @@ font-family: 'Tinos', serif;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  & button {
+}
+  .guest  button {
     /* position: relative; */
     padding: 15px 20px;
     border-radius: 7px;
@@ -319,13 +325,14 @@ font-family: 'Tinos', serif;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
   }
-& a {
+  .guest  a {
   text-decoration: none;
   color: #ffffff;
-} & a:hover {
+}
+ .guest  a:hover {
   color: black;
 }
-  & button:hover {
+.guest  button:hover {
     background: white;
     font-size: 14px;
     box-shadow: 0 0 30px 5px white;
@@ -334,16 +341,16 @@ font-family: 'Tinos', serif;
     color: black;
     transition: all 0.2s ease-out;
   }
-  & button:hover + a:hover {
+  .guest  button:hover + a:hover {
     color: black;
   }
-  & button:hover::before {
+  .guest  button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
   }
 
-  & button::before {
+  .guest  button::before {
     content: "";
     display: block;
     width: 0px;
@@ -362,13 +369,13 @@ font-family: 'Tinos', serif;
     transform: skewX(-20deg);
   }
 
-  & button:active {
+  .guest  button:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-  & div {
+  .guest  div {
     /* border: 3px solid blue; */
     padding-top: 50px;
     /* position: absolute; */
@@ -378,15 +385,16 @@ font-family: 'Tinos', serif;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    & h5 {
+  }
+    .guest  h5 {
       padding-bottom: 10px;
       font-size: 18px;
       letter-spacing: 2px;
     }
-    & a {
+    .guest  a {
       color: white;
     }
-    & i {
+    .guest  i {
       font-size: 25px;
       cursor: pointer;
       padding: 5px;
@@ -394,62 +402,64 @@ font-family: 'Tinos', serif;
       border-radius: 50%;
       animation: det 1s infinite;
     }
-  }
-}
+
 main {
   
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  & .story {
+}
+main  .story {
     width: 100%;
     padding: 10px 0;
+}
 
-    & .gb-story {
+    main  .gb-story {
       width: 40%;
       padding: 10px;
       /* border: 2px solid red; */
       float: right;
-      & .groom,
-      & .bride {
+    }
+       .groom,
+       .bride {
         padding-bottom: 30px;
         width: 90%;
         margin: 0 auto;
         /* border: 3px solid blue; */
         /* font-size: 30px; */
-        & h2 {
+       }
+        main  h2 {
           font-size: 40px;
           font-family: "Playfair Display", serif;
           text-align: left;
           padding-bottom: 50px;
         }
-        & p {
+        main  p {
           font-size: 20px;
           /* color: black; */
           padding-bottom: 30px;
           font-weight: 50;
         }
-      }
-    }
-  }
-}
+      
 .calender {
   width: 100%;
   /* border: 2px solid red; */
   padding: 10px 0;
-  & .schedule {
+}
+.calender  .schedule {
     width: 40%;
     float: right;
     
     padding: 10px;
-    & h2 {
+}
+.calender  h2 {
       font-size: 40px;
       text-align: center;
       padding-bottom: 50px;
       font-family: "Playfair Display", serif;
     }
-    & .below-schedule {
+    .calender  .below-schedule {
       width: 90%;
       text-align: center;
       padding-bottom: 25px;
@@ -458,20 +468,20 @@ main {
       font-size: 23px;
       border-bottom: 0.5px solid gray;
     }
-    & h3 {
+    .calender  h3 {
       text-align: center;
       font-size: 25px;
       font-weight: 900;
       padding: 20px 0 10px 0;
     }
-    & h4 {
+    .calender  h4 {
       text-align: center;
       font-size: 20px;
       font-weight: 600;
       color: gray;
       padding-bottom: 40px;
     }
-    & p {
+    .calender  p {
       width: 90%;
       padding-top: 10px;
       text-align: center;
@@ -480,7 +490,7 @@ main {
 
       /* font-weight: 900; */
     }
-    & .hanger {
+    .calender  .hanger {
       display: flex;
       align-items: center;
       width: 90%;
@@ -490,33 +500,32 @@ main {
       text-align: left;
       padding-top: 30px;
       padding-bottom: 0;
-      & img {
+    }
+      .calender  img {
         width: 20px;
         height: 20px;
         margin-right: 20px;
       }
-      & a {
+      .calender  a {
         color: rgb(174, 190, 148);
         /* text-transform: uppercase; */
       }
-    }
-    & .map {
+    
+      .calender  .map {
       text-align: center;
     }
-    & .reception {
+    .calender  .reception {
       padding-top: 10px;
     }
-    & .registry {
-      & p {
-        padding-bottom: 30px;
-      }
-    }
-   
-  }
-}
+     .registry  p{
+      padding-bottom: 30px;
+     }
+       
+
 .gmeet {
   padding-bottom: 25px;
-  & p {
+}
+.gmeet  p {
     font-size: 20px;
     font-weight: 900;
     text-align: center;
@@ -524,7 +533,7 @@ main {
     /* width: 80%; */
 
   }
-}
+
 .meet {
   height: 20px;
   width: 20px; 
@@ -552,7 +561,8 @@ footer {
   width: 100%;
   /* border: 3px solid red; */
   padding: 0px 0 60px 0;
-  & .foot {
+}
+  footer  .foot {
     width: 40%;
     
     padding: 0px 0 30px 0;
@@ -560,43 +570,46 @@ footer {
    display: flex;
    flex-direction: column;
     /* border: 1px solid blue; */
-    & div {
+  }
+  footer  div {
 /* border: 3px solid black; */
 display: flex;
 padding-bottom: 30px;
 flex-wrap: wrap;
 justify-content: space-evenly;
     }
-    & ul {
+    footer  ul {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      & li {
+    }
+    footer  li {
         font-size: 20px;
         /* text-decoration: underline; */
         list-style: none;
         cursor: pointer;
       }
-      & img {
+      footer  img {
         height: 30px;
         text-decoration: none;
         width: 30px;
       }
-      & a {
+      footer  a {
         color: rgb(174, 190, 148);
         text-decoration: none;
       }
-      & a:hover {
+      footer  a:hover {
         text-decoration: underline;
       }
-    }
-  }
-}
+    
+  
+
 
 /* gift */
 .second-body {
   padding: 40px 0;
-  & .arrow-left {
+}
+.second-body  .arrow-left {
     position: fixed;
     top: 60px;
     left: 5%;
@@ -608,13 +621,13 @@ justify-content: space-evenly;
     border: none;
     color: white;
   }
-  & .arrow-left:hover{
+  .second-body  .arrow-left:hover{
     background-color: transparent;
     color: black;
     border: 1px solid black;
     transition: .5s;
   }
-}
+
 .tit {
   font-size: 50px;
   text-transform: uppercase;
@@ -633,8 +646,9 @@ justify-content: space-evenly;
   color: black;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
 
-  & div {
+.gifts  div {
     width: 30%;
     /* padding: 30px 0; */
     padding-bottom: 30px;
@@ -646,11 +660,13 @@ justify-content: space-evenly;
     overflow: hidden;
     border: 1px solid gray;
     border-radius: 15px;
-    & img {
+}
+.gifts  img {
       width: 100%;
       /* height: 20px; */
+}
       
-    } & a{
+.gifts  a{
       display: flex;
       width: 100%;
       color: black;
@@ -662,36 +678,30 @@ justify-content: space-evenly;
       padding: 0 4px;
       text-decoration: none;
     }
-    & h4{
+    .gifts  h4{
        font-size: 25px;
        font-weight: 400;
        margin-bottom: 20px;
     }
-    /* & button {
-      width: 200px;
-      padding: 10px 0;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-    } */
-    & nav {
+    
+    .gifts  nav {
       width: 80%;
       height: 250px;
       /* border: 2px solid red; */
       
     }
-  }
-}
+
 .fry-pan {
   height: 250px;
   
 }
 #large {
   width: 100%;
-  & img {
+}
+  #large  img {
     height: 235px;
   }
-}
+
 span  h4{
   text-align: center;
 }
@@ -770,7 +780,8 @@ span  h4{
       max-width: 700px;
       height: 500px;
       padding:0 50px 50px 50px;
-      & h2 {
+ }
+      .swiper  h2 {
         font-size: 40px;
           font-family: "Playfair Display", serif;
           text-align: center;
@@ -778,7 +789,7 @@ span  h4{
           border: 3px solid black;
           /* padding-bottom: 50px; */
       }
-    }
+    
     .mom {
       font-size: 40px;
           font-family: "Playfair Display", serif;
